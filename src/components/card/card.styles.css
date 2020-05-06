@@ -10,7 +10,19 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
-  transition: transform 0.25s ease-out;
+	transition: transform 0.25s ease-out;
+
+}
+
+.thumb-wrraper {
+	height: 170px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.card-container .thumb-wrraper img {
+	height: auto;
+	width: 100%;
 }
 
 .card-container:hover {
