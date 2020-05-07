@@ -23,7 +23,7 @@ class App extends Component {
 			.then(users => this.setState({ heroes: users }));
 
 		// fetch('http://gateway.marvel.com//v1/public/characters?limit=100&ts=1&apikey=c46197f79f373ff6b5c458314d26732f&hash=972d7c7ecaed6fe18b83e6ac8c04e0af')
-		fetch('http://gateway.marvel.com/v1/public/series/8842/characters?limit=100&ts=1&apikey=c46197f79f373ff6b5c458314d26732f&hash=972d7c7ecaed6fe18b83e6ac8c04e0af')
+		fetch('https://gateway.marvel.com/v1/public/series/8842/characters?limit=100&ts=1&apikey=c46197f79f373ff6b5c458314d26732f&hash=972d7c7ecaed6fe18b83e6ac8c04e0af')
 			.then(response => response.json())
 			.then(res => {
 				console.log("Here is loading the marvel characters");
